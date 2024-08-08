@@ -1,17 +1,20 @@
 {
-  "name": "scrapper_service",
+  "name": "mail_service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "handlebars": "^4.7.8",
     "mongoose": "^8.5.2",
     "nodemailer": "^6.9.14",
     "request-promise": "^4.2.6"
