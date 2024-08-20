@@ -3,7 +3,8 @@ const { checkMail } = require("../utils/validation/check");
 const sendMail = require("../utils/mail/sender").sendMail;
 
 const sender = async (req, res) => {
-    var { mail, subject, message } = req.body;
+    var { to, subject, message } = req.body;
+    var mail = to;
     try {
         // validation
         if (!mail || !subject || !message) {
@@ -11,7 +12,8 @@ const sender = async (req, res) => {
         }
         else {
             if (mail == "" || subject == "" || message == "") {
-                throw new Error('Null values are not allowed');
+                // throw new Error('Null values are not allowed');
+                res.status(400).json({ message: 'Required fields are missing', success: false });
             }
         }
 
