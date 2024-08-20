@@ -1,8 +1,6 @@
 
 # Mail Service
 
----
-
 Mail Service is an Express.js server that integrates Nodemailer for sending emails. This service is designed to be a lightweight and easy-to-use solution for sending emails from a sender's email to a receiver's email.
 
 ## Features
@@ -62,7 +60,7 @@ npm start
 
 The server will start on the default port `3000`. You can change the port by setting the `PORT` environment variable.
 
-### API Endpoints
+## API Endpoints
 
 #### Send Mail `/mail`
 
