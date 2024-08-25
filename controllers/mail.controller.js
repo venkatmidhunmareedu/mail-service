@@ -12,7 +12,6 @@ const sender = async (req, res) => {
         }
         else {
             if (mail == "" || subject == "" || message == "") {
-                // throw new Error('Null values are not allowed');
                 res.status(400).json({ message: 'Required fields are missing', success: false });
             }
         }
